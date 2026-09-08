@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sparkle — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --text: #1a2433;
+    --text-muted: #55637a;
+    --accent: #2e6fa3;
+    --accent-strong: #1f5581;
+    --accent-soft: #e3eef5;
+    --border: #dce3ea;
+    --danger: #9c3140;
+    --danger-soft: #fbe9eb;
+    --serif: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10151c;
+      --surface: #171e27;
+      --text: #e7ecf2;
+      --text-muted: #93a1b4;
+      --accent: #6fb3de;
+      --accent-strong: #8fc4e6;
+      --accent-soft: #1c2c38;
+      --border: #29323d;
+      --danger: #e08a93;
+      --danger-soft: #2c1a1d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10151c;
+    --surface: #171e27;
+    --text: #e7ecf2;
+    --text-muted: #93a1b4;
+    --accent: #6fb3de;
+    --accent-strong: #8fc4e6;
+    --accent-soft: #1c2c38;
+    --border: #29323d;
+    --danger: #e08a93;
+    --danger-soft: #2c1a1d;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --text: #1a2433;
+    --text-muted: #55637a;
+    --accent: #2e6fa3;
+    --accent-strong: #1f5581;
+    --accent-soft: #e3eef5;
+    --border: #dce3ea;
+    --danger: #9c3140;
+    --danger-soft: #fbe9eb;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-strong); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.doc-head {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 600;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-family: var(--mono);
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 44px;
+  }
+  nav.toc p { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  nav.toc ol {
+    columns: 2;
+    gap: 24px;
+    margin: 0;
+    padding-left: 18px;
+    font-size: 14.5px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 6px; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+
+  section { margin-bottom: 40px; }
+  h2 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    padding-top: 4px;
+  }
+  h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 22px 0 8px;
+  }
+  p { margin: 0 0 14px; max-width: 65ch; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-size: 14.5px;
+    margin: 18px 0;
+  }
+  .callout.crisis {
+    background: var(--danger-soft);
+    border-left-color: var(--danger);
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .table-scroll { overflow-x: auto; margin: 18px 0; border: 1px solid var(--border); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 560px; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: var(--surface);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface) 60%, var(--bg)); }
+
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    white-space: nowrap;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 56px;
+    padding-top: 24px;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="doc-head">
+      <p class="eyebrow">Sparkle · Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective 9 September 2026 · Applies to the Sparkle mobile app (Android &amp; iOS)</p>
+    </header>
+
+    <nav class="toc" aria-label="Table of contents">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#overview">1. Overview</a></li>
+        <li><a href="#research">2. Sparkle is a research pilot</a></li>
+        <li><a href="#collect">3. Information we collect</a></li>
+        <li><a href="#use">4. How we use it</a></li>
+        <li><a href="#share">5. Who we share it with</a></li>
+        <li><a href="#retention">6. Retention &amp; withdrawal</a></li>
+        <li><a href="#security">7. Security</a></li>
+        <li><a href="#children">8. Children's privacy</a></li>
+        <li><a href="#rights">9. Your rights &amp; contact</a></li>
+        <li><a href="#changes">10. Changes to this policy</a></li>
+      </ol>
+    </nav>
+
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <p>
+        Sparkle ("the app") is operated by <strong>Foresightbytes</strong> ("we", "us"). This policy explains what
+        information Sparkle collects, why, and how it's handled. It applies to anyone who creates a Sparkle account.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>2. Sparkle is a research pilot</h2>
+      <p>
+        Sparkle is currently running a short research study on whether creative activities — dance, poetry, and
+        writing — help make stress and mood easier to manage. When you sign up you're asked to agree to take part
+        before any study data is collected.
+      </p>
+      <div class="callout crisis">
+        <p>
+          Sparkle is a self-assessment and creative wellness tool, not a diagnostic or treatment service. If you have
+          concerns about your wellbeing at any time, please contact a qualified professional. In the United States,
+          you can call or text <strong>988</strong> for free, confidential crisis support, 24 hours a day.
+        </p>
+      </div>
+    </section>
+
+    <section id="collect">
+      <h2>3. Information we collect</h2>
+      <p>Everything below is tied to your account and only collected once you're signed in.</p>
+
+      <h3>Account information</h3>
+      <ul>
+        <li><strong>Email address and password</strong> — used to create and secure your account (handled by Firebase Authentication; we never see your password in plain text).</li>
+        <li><strong>Full name</strong> — collected at signup.</li>
+      </ul>
+
+      <h3>Optional profile details</h3>
+      <ul>
+        <li>Profile photo, phone number, and date of birth — all optional, added only if you fill them in on the Edit Profile screen.</li>
+      </ul>
+
+      <h3>Wellbeing survey responses</h3>
+      <ul>
+        <li>
+          Answers to standard, validated screening questionnaires (PHQ-9, GAD-7) plus one study-specific question
+          about confidence starting a creative activity, completed once at the start (baseline) and again after two
+          weeks (follow-up), along with a few follow-up-only questions about your experience using the app.
+        </li>
+        <li>Quick 1–5 mood check-ins you complete right after a dance, poetry, or writing session.</li>
+      </ul>
+
+      <h3>Content you create</h3>
+      <ul>
+        <li>Dance videos, and poetry or writing pieces you create or save inside the app.</li>
+      </ul>
+
+      <h3>App usage</h3>
+      <ul>
+        <li>
+          Session counts, time spent viewing versus creating, and how many pieces you start or finish — used to
+          understand engagement with the app during the pilot. We don't use third-party advertising or analytics
+          trackers.
+        </li>
+      </ul>
+
+      <h3>Device permissions</h3>
+      <p>Sparkle only asks for these when you actively use a related feature:</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Permission</th><th>When it's used</th></tr></thead>
+          <tbody>
+            <tr><td>Camera &amp; microphone</td><td>Recording a new dance video directly in the app</td></tr>
+            <tr><td>Photo &amp; video library</td><td>Choosing an existing video for a dance entry, or a photo for your profile</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="use">
+      <h2>4. How we use it</h2>
+      <ul>
+        <li>To run your account and let you sign in securely.</li>
+        <li>To analyze whether creative activities affect self-reported stress, anxiety, and mood over the course of the pilot.</li>
+        <li>To show you your own progress over time on your Profile screen.</li>
+        <li>To generate AI-assisted writing/poetry feedback within a session (see below).</li>
+        <li>To improve the app based on how it's actually used.</li>
+      </ul>
+    </section>
+
+    <section id="share">
+      <h2>5. Who we share it with</h2>
+      <p>We don't sell your data or share it for advertising. A few service providers process it on our behalf, strictly to run the app:</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Provider</th><th>What it handles</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>Firebase (Google)</td><td>Account authentication and all app data storage</td><td><span class="tag">processor</span></td></tr>
+            <tr><td>Cloudinary</td><td>Hosting profile photos and dance videos you upload</td><td><span class="tag">processor</span></td></tr>
+            <tr><td>Google Gemini API</td><td>Generating in-session writing/poetry suggestions from the text you're working on</td><td><span class="tag">processor</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Each is bound by its own provider agreement and only processes data to deliver the feature above.</p>
+    </section>
+
+    <section id="retention">
+      <h2>6. Retention &amp; withdrawal</h2>
+      <p>
+        You can withdraw from the study at any time from your Profile screen. Withdrawing stops any further
+        participation immediately; data already collected up to that point is retained but excluded from analysis —
+        standard practice for research integrity, since removing it after the fact could bias the study's results.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>7. Security</h2>
+      <p>
+        All data is encrypted in transit (HTTPS/TLS). Access to your data is restricted by server-side security rules
+        to your own account and to study administrators who need it to run the pilot.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2>8. Children's privacy</h2>
+      <p>
+        Sparkle is not directed at children and we do not knowingly collect information from anyone under 18.
+      </p>
+    </section>
+
+    <section id="rights">
+      <h2>9. Your rights &amp; contact</h2>
+      <p>
+        To ask what data we hold about you, request a copy, or request deletion, contact us at
+        <a href="mailto:ruman.cst.bd@gmail.com">ruman.cst.bd@gmail.com</a>.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>10. Changes to this policy</h2>
+      <p>
+        If this policy changes, we'll update the effective date above. Continued use of Sparkle after a change means
+        you accept the updated policy.
+      </p>
+    </section>
+
+    <footer>
+      Sparkle — a research pilot by Foresightbytes.
+    </footer>
+  </div>
+</body>
+</html>
